@@ -6,7 +6,7 @@ class Song
 
     @@all = []
 
-    def initialize(name = nil)
+    def initialize(name)
       @name = name
       @@all << name
     end
@@ -16,7 +16,7 @@ class Song
     end
 
     def artist_name
-      nil if self.artist.name == nil
+      nil if self.artist.name == ""
       self.artist.name
     end
 end
